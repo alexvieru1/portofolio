@@ -16,9 +16,28 @@
   }
 }
 
+body, :root {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar,
+:root::-webkit-scrollbar {
+    display: none;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, black, rgb(56, 1, 56), black);
+  background: black;
+}
+
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to right, #22d3ee, #c084fc, #e879f9);
+  transform-origin: 0%;
 }
 
 @layer utilities {

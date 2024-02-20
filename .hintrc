@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "mask-image",
+          "mask-repeat",
+          "mask-position",
+          "mask-size"
+        ]
+      }
+    ],
+    "no-inline-styles": "off",
+    "typescript-config/is-valid": "off"
+  }
+}

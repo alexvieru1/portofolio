@@ -41,6 +41,19 @@ export const FloatingNav = ({
     }
   });
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(
+      e.currentTarget.getAttribute("href")!.substring(1)
+    );
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 75,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -64,6 +77,7 @@ export const FloatingNav = ({
           <Link
             key={`link=${idx}`}
             href={navItem.link}
+            onClick={handleClick}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
