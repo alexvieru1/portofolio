@@ -10,11 +10,18 @@
           "mask-image",
           "mask-repeat",
           "mask-position",
-          "mask-size"
+          "mask-size",
+          "-webkit-text-size-adjust"
         ]
       }
     ],
     "no-inline-styles": "off",
-    "typescript-config/is-valid": "off"
+    "typescript-config/is-valid": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ]
   }
 }

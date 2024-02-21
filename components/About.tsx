@@ -31,7 +31,7 @@ const About = () => {
       >
         <TypewriterEffectSmooth words={words} />
       </div>
-      <div className="grid space-x-10 space-y-8 sm:mx-auto 4xs:grid-cols-1 4xs:mt-[-100px] lg:grid-cols-2 lg:mt-0">
+      <div className="grid space-x-10 space-y-8 sm:mx-auto 4xs:grid-cols-1 4xs:mt-[-100px] lg:grid-cols-2 2xl:mt-0">
         <motion.div
           className="4xs:max-w-[200px] sm:max-w-[350px] xl:max-w-[450px]"
           initial={{ opacity: 0, x: 50 }}

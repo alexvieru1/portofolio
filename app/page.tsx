@@ -20,7 +20,7 @@ export default function Home() {
       <About />
       <Projects />
       <Contact />
-      <div className="h-[3000px] "></div>
+      <div className="h-[200px]"></div>
     </div>
   );
 }

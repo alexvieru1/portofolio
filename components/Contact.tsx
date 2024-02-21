@@ -1,5 +1,9 @@
 import React from "react";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import ContactForm from "./ui/ContactForm";
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const words = [
@@ -17,6 +21,28 @@ const Contact = () => {
       className: "text-[#38bdf8] dark:text-[#38bdf8] ",
     },
   ];
+  const socialMedia = [
+    {
+      title: "Instagram",
+      image: "/images/instagram.svg",
+      link: "https://www.instagram.com/alexvieru/",
+    },
+    {
+      title: "Facebook",
+      image: "/images/facebook.svg",
+      link: "https://www.facebook.com/vieru.alexandruu/",
+    },
+    {
+      title: "LinkedIn",
+      image: "/images/linkedin.svg",
+      link: "https://www.linkedin.com/in/alexandru-vieru-330a23298/",
+    },
+    {
+      title: "GitHub",
+      image: "/images/github-mark-white.svg",
+      link: "https://github.com/alexvieru1",
+    },
+  ];
   return (
     <div className="flex flex-col items-center 4xs:mt-40  lg:mt-80">
       <div
@@ -25,8 +51,42 @@ const Contact = () => {
       >
         <TypewriterEffectSmooth words={words} className="h-[40rem]" />
       </div>
-      <div className="grid grid-cols-1 gap-6 4xs:mt-[-150px] sm:mt-0 xl:grid-cols-2">
-        <div></div>
+      <div className="grid grid-cols-1 4xs:gap-10 sm:gap-50 4xs:mt-[-150px] 2xl:mt-0 xl:grid-cols-2">
+        <div className="flex flex-col items-center">
+          <h1 className="text-xl font-bold mb-4 ">Contact</h1>
+          <ContactForm />
+        </div>
+        <div className="flex flex-col items-center">
+          <h1 className="text-xl font-bold mb-4 ">Social Media</h1>
+          <motion.div
+            className="flex flex-col items-center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.8,
+                delay: 1,
+              },
+            }}
+            viewport={{ once: false }}
+          >
+            {socialMedia.map((s, index) => (
+              <Link href={s.link} target="_blank" key={index}>
+                <button className="my-6 w-60 inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                  <Image
+                    src={s.image}
+                    width={20}
+                    height={20}
+                    alt="githublogo"
+                    className="mr-2"
+                  />
+                  {s.title}
+                </button>
+              </Link>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </div>
   );
