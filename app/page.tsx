@@ -6,6 +6,7 @@ import { motion, useScroll } from "framer-motion";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import { SparklesPreview } from "@/components/SparklesPreview";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -16,7 +17,8 @@ export default function Home() {
         style={{ scaleX: scrollYProgress }}
       />
       <NavBar />
-      <Hero />
+      <SparklesPreview/>
+      {/* <Hero /> */}
       <About />
       <Projects />
       <Contact />
