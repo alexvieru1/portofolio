@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { motion } from "framer-motion";
-import AnimatedCharacters from "./ui/AnimatedCharacters";
 import { AnimatedBall } from "./ui/AnimatedBall";
 
 export function SparklesPreview() {
@@ -33,7 +32,7 @@ export function SparklesPreview() {
           y: 0,
           transition: {
             duration: 0.8,
-            delay: 0,
+            delay: 0.5,
           },
         }}
         viewport={{ once: true }}

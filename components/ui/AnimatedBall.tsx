@@ -28,12 +28,6 @@ export const AnimatedBall = () => {
       repeatType: "reverse",
       ease: "easeOut",
     },
-    backgroundColor: {
-      duration: 0.6,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeOut",
-    },
     opacity: {
       delay: 3,
     },
@@ -46,7 +40,7 @@ export const AnimatedBall = () => {
         transition={bounceTransition}
         animate={{
           y: ["100%", "-100%"],
-          backgroundColor: ["#22d3ee", "#c084fc"],
+          backgroundColor: "#6366f1",
           opacity: opacity,
         }}
         initial={{ opacity: 0 }}

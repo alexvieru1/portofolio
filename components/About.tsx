@@ -20,7 +20,7 @@ const About = () => {
     },
     {
       text: "me.",
-      className: "text-[#38bdf8] dark:text-[#38bdf8] ",
+      className: "text-[#6366f1] dark:text-[#6366f1] ",
     },
   ];
   return (
