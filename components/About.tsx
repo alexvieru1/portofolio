@@ -51,6 +51,7 @@ const About = () => {
             width={500}
             height={500}
             alt="profile pic"
+            draggable={false}
           />
         </motion.div>
         <motion.div

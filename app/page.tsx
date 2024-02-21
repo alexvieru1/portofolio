@@ -10,7 +10,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
   const { scrollYProgress } = useScroll();
   return (
-    <div>
+    <div className="select-none">
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}

@@ -80,6 +80,7 @@ const Contact = () => {
                     height={20}
                     alt="githublogo"
                     className="mr-2"
+                    draggable={false}
                   />
                   {s.title}
                 </button>
