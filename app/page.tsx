@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -17,7 +18,8 @@ export default function Home() {
       <NavBar />
       <Hero />
       <About />
-      <Projects/>
+      <Projects />
+      <Contact />
       <div className="h-[3000px] "></div>
     </div>
   );

@@ -4,6 +4,8 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Image from "next/image";
+import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const Projects = () => {
   const words = [
@@ -26,26 +28,37 @@ const Projects = () => {
       title: "Mr. Lucass",
       description: "The website of a real estate developer.",
       image: "/images/mrLucass.png",
+      github: "https://github.com/alexvieru1/MrLucass",
     },
     {
       title: "Pizza Express",
       description: "A website for a fictional pizza joint.",
       image: "/images/pizzaExpress.png",
+      github: "https://github.com/alexvieru1/PizzaOrderWebsite",
     },
     {
       title: "Homes & Condos Rental",
       description: "A web-based rental service based on AirBnB's API.",
       image: "/images/airbNb.png",
+      github: "https://github.com/alexvieru1/HomesAndCondoRentals",
     },
     {
       title: "Pokemon Duel",
-      description: "An battle game, based on Pokemon's official API.",
+      description: "A battle game, based on Pokemon's official API.",
       image: "/images/pokemon.png",
+      github: "https://github.com/Rzvone/PokemonDuel",
     },
     {
       title: "Color Up",
       description: "Nails & Lashes saloon with e-commerce of products.",
       image: "/images/colorUp.png",
+      github: "https://github.com/Rzvone/colorup",
+    },
+    {
+      title: "Funeral Services",
+      description: "Funeral services website.",
+      image: "/images/funeralServices.png",
+      github: "https://github.com/CleanCodeRo/serviciiFunerarePresentation",
     },
   ];
   return (
@@ -84,13 +97,22 @@ const Projects = () => {
                   />
                 </CardItem>
                 <div className="flex justify-between items-center mt-20">
-                  <CardItem
-                    translateZ={20}
-                    as="button"
-                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                  >
-                    Github Repository
-                  </CardItem>
+                  <button className="inline-flex items-center px-2 py-2  bg-black text-white text-sm rounded-md font-semibold hover:bg-black/[0.8] hover:shadow-lg">
+                    Read More
+                    <ArrowLongRightIcon className="ml-1 w-5 h-5" />
+                  </button>
+                  <Link href={p.github}>
+                    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                      <Image
+                        src="/images/github-mark-white.svg"
+                        width={20}
+                        height={20}
+                        alt="githublogo"
+                        className="mr-2"
+                      />
+                      Github
+                    </button>
+                  </Link>
                 </div>
               </CardBody>
             </CardContainer>
