@@ -1,23 +1,25 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { motion } from "framer-motion";
 import AnimatedCharacters from "./ui/AnimatedCharacters";
 import { AnimatedBall } from "./ui/AnimatedBall";
 
 export function SparklesPreview() {
-  const getParticleDensity = () => {
-    if (window.innerWidth < 500) {
-      // For 4xs screens
-      return 100;
-    } else if (window.innerWidth <= 768) {
-      // For md screens
-      return 200;
-    } else {
-      // For lg screens and above
-      return 1000;
-    }
-  };
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+  useEffect(() => {
+    const updateScreenSize = () => {
+      setIsLargeScreen(window.innerWidth > 500);
+    };
+
+    window.addEventListener("resize", updateScreenSize);
+
+    updateScreenSize();
+
+    return () => {
+      window.removeEventListener("resize", updateScreenSize);
+    };
+  }, []);
 
   return (
     <div
@@ -52,7 +54,7 @@ export function SparklesPreview() {
           background="transparent"
           minSize={0.4}
           maxSize={1}
-          particleDensity={getParticleDensity()}
+          particleDensity={isLargeScreen ? 1000 : 100}
           className="w-full h-full"
           particleColor="#FFFFFF"
         />
