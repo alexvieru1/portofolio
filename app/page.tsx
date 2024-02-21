@@ -18,7 +18,6 @@ export default function Home() {
       />
       <NavBar />
       <SparklesPreview/>
-      {/* <Hero /> */}
       <About />
       <Projects />
       <Contact />
