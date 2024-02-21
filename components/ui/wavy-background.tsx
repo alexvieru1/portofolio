@@ -1,4 +1,3 @@
-"use client";
 import { cn } from "@/utils/cn";
 import React, { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
@@ -54,11 +53,15 @@ export const WavyBackground = ({
     w = ctx.canvas.width = window.innerWidth;
     h = ctx.canvas.height = window.innerHeight;
     ctx.filter = `blur(${blur}px)`;
+    canvas.style.backdropFilter = `blur(${blur}px)`; // Add backdrop-filter
+    canvas.style.webkitBackdropFilter = `blur(${blur}px)`; // Add -webkit-backdrop-filter
     nt = 0;
     window.onresize = function () {
       w = ctx.canvas.width = window.innerWidth;
       h = ctx.canvas.height = window.innerHeight;
       ctx.filter = `blur(${blur}px)`;
+      canvas.style.backdropFilter = `blur(${blur}px)`; // Update backdrop-filter on resize
+      canvas.style.webkitBackdropFilter = `blur(${blur}px)`; // Update -webkit-backdrop-filter on resize
     };
     render();
   };
