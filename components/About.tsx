@@ -47,7 +47,7 @@ const About = () => {
         >
           <Image
             className="rounded-xl"
-            src="/images/eu.jpg"
+            src="/images/eu.webp"
             width={500}
             height={500}
             alt="profile pic"
