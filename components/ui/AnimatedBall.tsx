@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { ArrowDownCircleIcon } from "@heroicons/react/20/solid";
+import { ArrowDownCircleIcon, ChevronDoubleDownIcon } from "@heroicons/react/20/solid";
 
 export const AnimatedBall = () => {
   const [opacity, setOpacity] = React.useState(1);
@@ -34,20 +34,18 @@ export const AnimatedBall = () => {
   };
 
   return (
-    <div className="flex justify-center">
-      <motion.span
-        className="rounded-full"
+    <div className="flex items-center justify-end mt-5">
+      <motion.div
         transition={bounceTransition}
         animate={{
-          y: ["100%", "-100%"],
-          backgroundColor: "#6366f1",
+          y: ["25%", "-50%"],
           opacity: opacity,
         }}
         initial={{ opacity: 0 }}
         style={{ transition: "opacity  0.3s ease" }}
       >
-        <ArrowDownCircleIcon className="w-8 h-8 text-black" />
-      </motion.span>
+        <ChevronDoubleDownIcon className="w-8 h-8 text-white" />
+      </motion.div>
     </div>
   );
 };

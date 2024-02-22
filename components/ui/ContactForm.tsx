@@ -133,15 +133,15 @@ const ContactForm = () => {
                 bgColor="black"
                 border="1px"
                 borderStyle="inherit"
-                borderColor="#6366f1"
+                borderColor="#0099ff"
                 type="text"
                 name="name"
-                errorBorderColor="red.300"
+                errorBorderColor="red"
                 value={state.name}
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage>Name field is required</FormErrorMessage>
+              <FormErrorMessage color="red">Name field is required</FormErrorMessage>
             </FormControl>
             <FormControl
               isRequired
@@ -155,15 +155,15 @@ const ContactForm = () => {
                 bgColor="black"
                 border="1px"
                 borderStyle="inherit"
-                borderColor="#6366f1"
+                borderColor="#0099ff"
                 type="email"
                 name="email"
-                errorBorderColor="red.300"
+                errorBorderColor="red"
                 value={state.email}
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage>Email field is required</FormErrorMessage>
+              <FormErrorMessage color="red">Email field is required</FormErrorMessage>
             </FormControl>
             <FormControl
               isRequired
@@ -177,15 +177,15 @@ const ContactForm = () => {
                 bgColor="black"
                 border="1px"
                 borderStyle="inherit"
-                borderColor="#6366f1"
+                borderColor="#0099ff"
                 type="text"
                 name="subject"
-                errorBorderColor="red.300"
+                errorBorderColor="red"
                 value={state.subject}
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage>Subject field is required</FormErrorMessage>
+              <FormErrorMessage color="red">Subject field is required</FormErrorMessage>
             </FormControl>
             <FormControl
               isRequired
@@ -201,14 +201,14 @@ const ContactForm = () => {
                 bgColor="black"
                 border="1px"
                 borderStyle="inherit"
-                borderColor="#6366f1"
+                borderColor="#0099ff"
                 name="message"
-                errorBorderColor="red.300"
+                errorBorderColor="red"
                 value={state.message}
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage>Message field is required</FormErrorMessage>
+              <FormErrorMessage color="red">Message field is required</FormErrorMessage>
             </FormControl>
             <button
               disabled={

@@ -18,7 +18,7 @@ const Contact = () => {
     },
     {
       text: "chat!",
-      className: "text-[#6366f1] dark:text-[#6366f1] ",
+      className: "text-[#0099ff] dark:text-[#0099ff] ",
     },
   ];
   const socialMedia = [
@@ -26,11 +26,6 @@ const Contact = () => {
       title: "Instagram",
       image: "/images/instagram.svg",
       link: "https://www.instagram.com/alexvieru/",
-    },
-    {
-      title: "Facebook",
-      image: "/images/facebook.svg",
-      link: "https://www.facebook.com/vieru.alexandruu/",
     },
     {
       title: "LinkedIn",
@@ -41,6 +36,11 @@ const Contact = () => {
       title: "GitHub",
       image: "/images/github-mark-white.svg",
       link: "https://github.com/alexvieru1",
+    },
+    {
+      title: "Facebook",
+      image: "/images/facebook.svg",
+      link: "https://www.facebook.com/vieru.alexandruu/",
     },
   ];
   return (
@@ -58,21 +58,22 @@ const Contact = () => {
         </div>
         <div className="flex flex-col items-center">
           <h1 className="text-xl font-bold mb-4 ">Social Media</h1>
-          <motion.div
-            className="flex flex-col items-center"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.8,
-                delay: 1,
-              },
-            }}
-            viewport={{ once: false }}
-          >
-            {socialMedia.map((s, index) => (
-              <Link href={s.link} target="_blank" key={index}>
+          {socialMedia.map((s, index) => (
+            <motion.div
+              key={index}
+              className="flex flex-col items-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.5,
+                  delay: index,
+                },
+              }}
+              viewport={{ once: false }}
+            >
+              <Link href={s.link} target="_blank">
                 <button className="my-6 w-60 inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                   <Image
                     src={s.image}
@@ -85,8 +86,8 @@ const Contact = () => {
                   {s.title}
                 </button>
               </Link>
-            ))}
-          </motion.div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </div>

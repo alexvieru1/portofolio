@@ -20,7 +20,7 @@ const Projects = () => {
     },
     {
       text: "projects:",
-      className: "text-[#6366f1] dark:text-[#6366f1] ",
+      className: "text-[#0099ff] dark:text-[#0099ff] ",
     },
   ];
   const projects = [
