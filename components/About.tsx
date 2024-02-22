@@ -70,7 +70,7 @@ const About = () => {
             problem-solving.
           </h1>
           <h1>
-            For leisure, I enjoy practicing and following sports, watching
+            For leisure, I enjoy following sports, watching
             movies, engaging in various activities with my friends, and last but
             not least, going for walks with my dog.
           </h1>

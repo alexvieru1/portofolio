@@ -6,6 +6,7 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Image from "next/image";
 import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import { projectsData } from "@/constants/projectsData";
 
 const Projects = () => {
   const words = [
@@ -23,44 +24,7 @@ const Projects = () => {
       className: "text-[#0099ff] dark:text-[#0099ff] ",
     },
   ];
-  const projects = [
-    {
-      title: "Mr. Lucass",
-      description: "The website of a real estate developer.",
-      image: "/images/mrLucass.webp",
-      github: "https://github.com/alexvieru1/MrLucass",
-    },
-    {
-      title: "Pizza Express",
-      description: "A website for a fictional pizza joint.",
-      image: "/images/pizzaExpress.webp",
-      github: "https://github.com/alexvieru1/PizzaOrderWebsite",
-    },
-    {
-      title: "Homes & Condos Rental",
-      description: "A web-based rental service based on AirBnB's API.",
-      image: "/images/airbNb.webp",
-      github: "https://github.com/alexvieru1/HomesAndCondoRentals",
-    },
-    {
-      title: "Pokemon Duel",
-      description: "A battle game, based on Pokemon's official API.",
-      image: "/images/pokemon.webp",
-      github: "https://github.com/Rzvone/PokemonDuel",
-    },
-    {
-      title: "Color Up",
-      description: "Nails & Lashes saloon with e-commerce of products.",
-      image: "/images/colorUp.webp",
-      github: "https://github.com/Rzvone/colorup",
-    },
-    {
-      title: "Funeral Services",
-      description: "Funeral services website.",
-      image: "/images/funeralServices.webp",
-      github: "https://github.com/CleanCodeRo/serviciiFunerarePresentation",
-    },
-  ];
+  const projects = projectsData
   return (
     <div className="flex flex-col items-center 4xs:mt-40  lg:mt-80">
       <div
