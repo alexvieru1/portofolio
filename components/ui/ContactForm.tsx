@@ -10,7 +10,12 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { sendContactForm } from "@/lib/api";
-import { CheckCircleIcon } from "@heroicons/react/20/solid";
+import {
+  ArrowPathIcon,
+  CheckCircleIcon,
+  EnvelopeIcon,
+  PaperAirplaneIcon,
+} from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 
 type FormValues = {
@@ -43,6 +48,7 @@ const initVals: TouchedValues = {
 
 const ContactForm = () => {
   const [sendSuccess, setSendSuccess] = useState(false);
+  const [buttonIsLoading, setButtonIsLoading] = useState(false);
   const [state, setState] = useState<FormValues>(initValues);
   const [touched, setTouched] = useState<TouchedValues>(initVals);
 
@@ -66,6 +72,7 @@ const ContactForm = () => {
 
   const onSubmit = async () => {
     try {
+      setButtonIsLoading(true);
       await sendContactForm(state);
       setState(initValues);
       setTouched(initVals);
@@ -100,8 +107,8 @@ const ContactForm = () => {
             I'm working hard to reply to you as quickly as possible!{" "}
           </h1>
           <h1 className="text-md text-white">
-            While you wait, why not take a peek at my social media accounts for
-            more updates and interesting content?
+            During the interim, feel free to browse through my GitHub and
+            LinkedIn profiles for additional updates and engaging content.
           </h1>
         </motion.div>
       ) : (
@@ -141,7 +148,9 @@ const ContactForm = () => {
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage color="red">Name field is required</FormErrorMessage>
+              <FormErrorMessage color="red">
+                Name field is required
+              </FormErrorMessage>
             </FormControl>
             <FormControl
               isRequired
@@ -163,7 +172,9 @@ const ContactForm = () => {
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage color="red">Email field is required</FormErrorMessage>
+              <FormErrorMessage color="red">
+                Email field is required
+              </FormErrorMessage>
             </FormControl>
             <FormControl
               isRequired
@@ -185,7 +196,9 @@ const ContactForm = () => {
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage color="red">Subject field is required</FormErrorMessage>
+              <FormErrorMessage color="red">
+                Subject field is required
+              </FormErrorMessage>
             </FormControl>
             <FormControl
               isRequired
@@ -208,18 +221,40 @@ const ContactForm = () => {
                 onChange={handleChange}
                 onBlur={onBlur}
               />
-              <FormErrorMessage color="red">Message field is required</FormErrorMessage>
+              <FormErrorMessage color="red">
+                Message field is required
+              </FormErrorMessage>
             </FormControl>
             <button
               disabled={
-                !state.name || !state.email || !state.subject || !state.message
+                !state.name ||
+                !state.email ||
+                !state.subject ||
+                !state.message ||
+                buttonIsLoading
               }
               onClick={onSubmit}
               className="w-full relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             >
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                Submit
+                {buttonIsLoading ? (
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{
+                      ease: "linear",
+                      repeat: Infinity,
+                      duration: 1,
+                    }}
+                  >
+                    <ArrowPathIcon className="text-white ml-2 w-5 h-5" />
+                  </motion.div>
+                ) : (
+                  <>
+                    Send Email
+                    <PaperAirplaneIcon className="text-white ml-2 w-5 h-5" />
+                  </>
+                )}
               </span>
             </button>
           </Container>

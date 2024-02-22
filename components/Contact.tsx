@@ -22,11 +22,11 @@ const Contact = () => {
     },
   ];
   const socialMedia = [
-    {
-      title: "Instagram",
-      image: "/images/instagram.svg",
-      link: "https://www.instagram.com/alexvieru/",
-    },
+    // {
+    //   title: "Instagram",
+    //   image: "/images/instagram.svg",
+    //   link: "https://www.instagram.com/alexvieru/",
+    // },
     {
       title: "LinkedIn",
       image: "/images/linkedin.svg",
@@ -37,11 +37,11 @@ const Contact = () => {
       image: "/images/github-mark-white.svg",
       link: "https://github.com/alexvieru1",
     },
-    {
-      title: "Facebook",
-      image: "/images/facebook.svg",
-      link: "https://www.facebook.com/vieru.alexandruu/",
-    },
+    // {
+    //   title: "Facebook",
+    //   image: "/images/facebook.svg",
+    //   link: "https://www.facebook.com/vieru.alexandruu/",
+    // },
   ];
   return (
     <div className="flex flex-col items-center 4xs:mt-40  lg:mt-80">
@@ -51,13 +51,13 @@ const Contact = () => {
       >
         <TypewriterEffectSmooth words={words} className="h-[40rem]" />
       </div>
-      <div className="grid grid-cols-1 4xs:gap-10 sm:gap-50 4xs:mt-[-150px] 2xl:mt-0 xl:grid-cols-2">
+      <div className="grid grid-cols-1 justify-items-between 4xs:gap-10 sm:gap-50 4xs:mt-[-150px] 2xl:mt-0 xl:grid-cols-2">
         <div className="flex flex-col items-center">
           <h1 className="text-white text-xl font-bold mb-4 ">Contact</h1>
           <ContactForm />
         </div>
         <div className="flex flex-col items-center">
-          <h1 className="text-xl font-bold mb-4 ">Social Media</h1>
+          <h1 className="text-xl font-bold mb-4 ">Check my</h1>
           {socialMedia.map((s, index) => (
             <motion.div
               key={index}
