@@ -55,7 +55,7 @@ const About = () => {
           />
         </motion.div>
         <motion.div
-          className="4xs:max-w-[200px] sm:max-w-[350px] xl:max-w-[450px] 4xs:text-xs sm:text-sm lg:text-md xl:text-lg"
+          className="text-white 4xs:max-w-[200px] sm:max-w-[350px] xl:max-w-[450px] 4xs:text-xs sm:text-sm lg:text-md xl:text-lg"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{
             opacity: 1,

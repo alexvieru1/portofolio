@@ -37,7 +37,7 @@ export function SparklesPreview() {
         }}
         viewport={{ once: true }}
       >
-        <h1 className="font-bold 4xs:text-4xl md:text-5xl md:mb-[-25px] 2xl:text-7xl 2xl:mb-[-50px]">
+        <h1 className="font-bold 4xs:text-4xl md:text-5xl md:mb-[-25px] 2xl:text-7xl 2xl:mb-[-50px] text-white">
           Hello there
         </h1>
       </motion.div>
@@ -62,7 +62,7 @@ export function SparklesPreview() {
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
       <motion.div
-        className="text-center 4xs:text-md md:text-lg 2xl:text-xl"
+        className="text-center 4xs:text-md md:text-lg 2xl:text-xl "
         initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,
@@ -74,7 +74,7 @@ export function SparklesPreview() {
         }}
         viewport={{ once: false }}
       >
-        <h1>Let&apos;s build something amazing together!</h1>
+        <h1 className="text-white">Let&apos;s build something amazing together!</h1>
       </motion.div>
       <div className="mt-10">
         <AnimatedBall />

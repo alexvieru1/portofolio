@@ -74,7 +74,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="text-white">
       {sendSuccess ? (
         <motion.div
           className="flex flex-col justify-center items-center text-center p-10"
@@ -93,13 +93,13 @@ const ContactForm = () => {
           viewport={{ once: false }}
         >
           <CheckCircleIcon className="h-10 w-10 text-green-700 mb-4" />
-          <h1 className="text-lg font-bold text-green-700">
+          <h1 className=" text-lg font-bold text-green-700">
             Fantastic! Your email has been sent successfully!
           </h1>
-          <h1 className="text-md ">
+          <h1 className="text-white text-md ">
             I'm working hard to reply to you as quickly as possible!{" "}
           </h1>
-          <h1 className="text-md ">
+          <h1 className="text-md text-white">
             While you wait, why not take a peek at my social media accounts for
             more updates and interesting content?
           </h1>
@@ -126,7 +126,7 @@ const ContactForm = () => {
               isInvalid={touched.name && !state.name}
               mb="1rem"
             >
-              <FormLabel>Name</FormLabel>
+              <FormLabel color="white">Name</FormLabel>
               <Input
                 padding="3px"
                 rounded="4px"
@@ -148,7 +148,7 @@ const ContactForm = () => {
               isInvalid={touched.email && !state.email}
               mb="1rem"
             >
-              <FormLabel>Email</FormLabel>
+              <FormLabel color="white">Email</FormLabel>
               <Input
                 padding="3px"
                 rounded="4px"
@@ -170,7 +170,7 @@ const ContactForm = () => {
               isInvalid={touched.subject && !state.subject}
               mb="1rem"
             >
-              <FormLabel>Subject</FormLabel>
+              <FormLabel color="white">Subject</FormLabel>
               <Input
                 padding="3px"
                 rounded="4px"
@@ -192,7 +192,7 @@ const ContactForm = () => {
               isInvalid={touched.message && !state.message}
               mb="1rem"
             >
-              <FormLabel>Message</FormLabel>
+              <FormLabel color="white">Message</FormLabel>
               <Textarea
                 minW="230px"
                 minH="150px"

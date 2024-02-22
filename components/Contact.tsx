@@ -53,7 +53,7 @@ const Contact = () => {
       </div>
       <div className="grid grid-cols-1 4xs:gap-10 sm:gap-50 4xs:mt-[-150px] 2xl:mt-0 xl:grid-cols-2">
         <div className="flex flex-col items-center">
-          <h1 className="text-xl font-bold mb-4 ">Contact</h1>
+          <h1 className="text-white text-xl font-bold mb-4 ">Contact</h1>
           <ContactForm />
         </div>
         <div className="flex flex-col items-center">

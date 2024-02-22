@@ -37,7 +37,7 @@ const Projects = () => {
         {projects.map((p, index) => (
           <div key={index} className="">
             <CardContainer className="inter-var 4xs:max-w-[90%] sm:max-w-none ">
-              <CardBody className="bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-black relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-white dark:text-white"
