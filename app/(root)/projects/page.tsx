@@ -1,9 +1,9 @@
-import Project from "@/components/Project";
+import Projectz from "@/components/Projectz";
 import React from "react";
 
 const page = () => {
   return <div>
-    <Project/>
+    <Projectz/>
   </div>;
 };
 

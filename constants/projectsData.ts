@@ -13,6 +13,9 @@ export const projectsData = [
       "/images/technologies/react.webp",
       "/images/technologies/node-js.svg",
     ],
+    details:
+      "Introducing a showcase of my latest website project! This portfolio piece encapsulates my dedication to crafting captivating digital experiences that resonate with audiences. From concept to execution, I poured my creativity and expertise into every pixel, ensuring that the final product not only meets but exceeds expectations. This project demonstrates my ability to blend cutting-edge design with seamless functionality, resulting in a website that is both visually stunning and user-friendly. Dive in to explore how I brought this vision to life and discover the transformative impact it can have on your digital presence.",
+    createdAt: "1st of May 2023",
   },
   {
     id: 2,
@@ -26,6 +29,9 @@ export const projectsData = [
       "/images/technologies/html.webp",
       "/images/technologies/express-js.svg",
     ],
+    details:
+      "Introducing a showcase of my latest website project! This portfolio piece encapsulates my dedication to crafting captivating digital experiences that resonate with audiences. From concept to execution, I poured my creativity and expertise into every pixel, ensuring that the final product not only meets but exceeds expectations. This project demonstrates my ability to blend cutting-edge design with seamless functionality, resulting in a website that is both visually stunning and user-friendly. Dive in to explore how I brought this vision to life and discover the transformative impact it can have on your digital presence.",
+    createdAt: "1st of May 2023",
   },
   {
     id: 3,
@@ -42,6 +48,9 @@ export const projectsData = [
       "/images/technologies/mui.webp",
       "/images/technologies/api.webp",
     ],
+    details:
+      "Introducing a showcase of my latest website project! This portfolio piece encapsulates my dedication to crafting captivating digital experiences that resonate with audiences. From concept to execution, I poured my creativity and expertise into every pixel, ensuring that the final product not only meets but exceeds expectations. This project demonstrates my ability to blend cutting-edge design with seamless functionality, resulting in a website that is both visually stunning and user-friendly. Dive in to explore how I brought this vision to life and discover the transformative impact it can have on your digital presence.",
+    createdAt: "1st of May 2023",
   },
   {
     id: 4,
@@ -56,6 +65,9 @@ export const projectsData = [
       "/images/technologies/react.webp",
       "/images/technologies/api.webp",
     ],
+    details:
+      "Introducing a showcase of my latest website project! This portfolio piece encapsulates my dedication to crafting captivating digital experiences that resonate with audiences. From concept to execution, I poured my creativity and expertise into every pixel, ensuring that the final product not only meets but exceeds expectations. This project demonstrates my ability to blend cutting-edge design with seamless functionality, resulting in a website that is both visually stunning and user-friendly. Dive in to explore how I brought this vision to life and discover the transformative impact it can have on your digital presence.",
+    createdAt: "1st of May 2023",
   },
   {
     id: 5,
@@ -72,6 +84,9 @@ export const projectsData = [
       "/images/technologies/mongo-db.webp",
       "/images/technologies/postgres.svg",
     ],
+    details:
+      "Introducing a showcase of my latest website project! This portfolio piece encapsulates my dedication to crafting captivating digital experiences that resonate with audiences. From concept to execution, I poured my creativity and expertise into every pixel, ensuring that the final product not only meets but exceeds expectations. This project demonstrates my ability to blend cutting-edge design with seamless functionality, resulting in a website that is both visually stunning and user-friendly. Dive in to explore how I brought this vision to life and discover the transformative impact it can have on your digital presence.",
+    createdAt: "1st of May 2023",
   },
   {
     id: 6,
@@ -86,5 +101,8 @@ export const projectsData = [
       "/images/technologies/tailwind-css.svg",
       "/images/technologies/framer.webp",
     ],
+    details:
+      "Introducing a showcase of my latest website project! This portfolio piece encapsulates my dedication to crafting captivating digital experiences that resonate with audiences. From concept to execution, I poured my creativity and expertise into every pixel, ensuring that the final product not only meets but exceeds expectations. This project demonstrates my ability to blend cutting-edge design with seamless functionality, resulting in a website that is both visually stunning and user-friendly. Dive in to explore how I brought this vision to life and discover the transformative impact it can have on your digital presence.",
+    createdAt: "1st of May 2023",
   },
 ];
