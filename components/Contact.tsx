@@ -30,7 +30,7 @@ const Contact = () => {
     {
       title: "LinkedIn",
       image: "/images/linkedin.svg",
-      link: "https://www.linkedin.com/in/alexandru-vieru-330a23298/",
+      link: "https://www.linkedin.com/in/vieru-alexandru/",
     },
     {
       title: "GitHub",
