@@ -1,24 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { motion } from "framer-motion";
 import { AnimatedBall } from "./ui/AnimatedBall";
+import useScreen from "@/hooks/useScreen";
 
 export function SparklesPreview() {
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
-  useEffect(() => {
-    const updateScreenSize = () => {
-      setIsLargeScreen(window.innerWidth > 500);
-    };
-
-    window.addEventListener("resize", updateScreenSize);
-
-    updateScreenSize();
-
-    return () => {
-      window.removeEventListener("resize", updateScreenSize);
-    };
-  }, []);
+  const isLargeScreen = useScreen()
 
   return (
     <div

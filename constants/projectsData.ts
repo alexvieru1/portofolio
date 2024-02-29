@@ -26,8 +26,10 @@ export const projectsData = [
     contributors: ["Razvan Bobonea", "Mihnea Zarafin"],
     technologies: [
       "/images/technologies/javascript.svg",
-      "/images/technologies/html.webp",
       "/images/technologies/express-js.svg",
+      "/images/technologies/html.webp",
+      "/images/technologies/css.svg",
+      "/images/technologies/bootstrap.svg",
     ],
     details:
       "Presenting our collaborative triumph: a dynamic pizza ordering website developed by our talented team. With a user-friendly interface, enticing menu options, and seamless shopping cart functionality, our platform redefines the pizza ordering experience. From customizable toppings to swift checkout processes, every aspect of this website is meticulously designed to delight pizza enthusiasts and streamline the ordering process. Join us on a journey of culinary convenience and satisfaction as we revolutionize the way people enjoy their favorite slices, one click at a time.",
@@ -78,8 +80,10 @@ export const projectsData = [
     contributors: ["Razvan Bobonea", "Mihnea Zarafin"],
     technologies: [
       "/images/technologies/java.svg",
+      "/images/technologies/spring-boot.svg",
       "/images/technologies/javascript.svg",
       "/images/technologies/react.webp",
+      "/images/technologies/api.webp",
       "/images/technologies/mui.webp",
       "/images/technologies/mongo-db.webp",
       "/images/technologies/postgres.svg",
