@@ -46,12 +46,12 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center 4xs:mt-40  lg:mt-80">
       <div
-        className="flex flex-col items-center justify-center h-[20rem]"
+        className="flex flex-col items-center justify-center h-[20rem] "
         id="contact"
       >
         <TypewriterEffectSmooth words={words} className="h-[40rem]" />
       </div>
-      <div className="grid grid-cols-1 justify-items-between 4xs:gap-10 sm:gap-50 4xs:mt-[-150px] 2xl:mt-0 xl:grid-cols-2">
+      <div className="grid grid-cols-1 w-full justify-items-between 4xs:gap-10 sm:gap-50 4xs:mt-[-150px] 2xl:mt-0 xl:grid-cols-2">
         <div className="flex flex-col items-center">
           <h1 className="text-white text-xl font-bold mb-4 ">Contact</h1>
           <ContactForm />
