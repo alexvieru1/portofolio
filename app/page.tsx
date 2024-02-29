@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { SparklesPreview } from "@/components/SparklesPreview";
+import InfiniteCarousel from "@/components/InfiniteCarousel";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -19,6 +20,7 @@ export default function Home() {
       <NavBar />
       <SparklesPreview/>
       <About />
+      <InfiniteCarousel/>
       <Projects />
       <Contact />
       <div className="h-[200px]"></div>

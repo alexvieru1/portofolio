@@ -97,7 +97,7 @@ const ContactForm = () => {
               delay: 1,
             },
           }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <CheckCircleIcon className="h-10 w-10 text-green-700 mb-4" />
           <h1 className=" text-lg font-bold text-green-700">
@@ -125,7 +125,7 @@ const ContactForm = () => {
               delay: 1,
             },
           }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <Container>
             <FormControl

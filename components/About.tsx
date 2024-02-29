@@ -43,7 +43,7 @@ const About = () => {
               delay: 2,
             },
           }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <Image
             className="rounded-xl"
@@ -51,7 +51,7 @@ const About = () => {
             width={500}
             height={500}
             alt="profile pic"
-            draggable={false}
+            draggable={true}
           />
         </motion.div>
         <motion.div
@@ -62,7 +62,7 @@ const About = () => {
             x: 0,
             transition: { duration: 1, delay: 1.5 },
           }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <h1>
             My name is Alexandru Vieru, a recently qualified Full Stack
@@ -70,9 +70,9 @@ const About = () => {
             problem-solving.
           </h1>
           <h1>
-            For leisure, I enjoy following sports, watching
-            movies, engaging in various activities with my friends, and last but
-            not least, going for walks with my dog.
+            For leisure, I enjoy following sports, watching movies, engaging in
+            various activities with my friends, and last but not least, going
+            for walks with my dog.
           </h1>
           <h1>
             I would describe myself as an energetic person, always eager to

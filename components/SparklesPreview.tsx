@@ -72,7 +72,7 @@ export function SparklesPreview() {
             delay: 2,
           },
         }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
       >
         <h1 className="text-white">Let&apos;s build something amazing together!</h1>
       </motion.div>

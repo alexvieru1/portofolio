@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       animation: {
         shimmer: "shimmer 2s linear infinite",
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
       keyframes: {
         shimmer: {
@@ -19,6 +20,10 @@ const config: Config = {
           to: {
             backgroundPosition: "-200% 0",
           },
+        },
+        "infinite-scroll": {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
         },
       },
       backgroundImage: {
@@ -45,28 +50,28 @@ const config: Config = {
       screens: {
         "4xs": "160px",
         // => @media (min-width: 160px) { ... }
-  
+
         "3xs": "240px",
         // => @media (min-width: 240px) { ... }
-  
+
         "2xs": "320px",
         // => @media (min-width: 320px) { ... }
-  
+
         xs: "480px",
         // => @media (min-width: 480px) { ... }
-  
+
         sm: "640px",
         // => @media (min-width: 640px) { ... }
-  
+
         md: "768px",
         // => @media (min-width: 768px) { ... }
-  
+
         lg: "1024px",
         // => @media (min-width: 1024px) { ... }
-  
+
         xl: "1280px",
         // => @media (min-width: 1280px) { ... }
-  
+
         "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
       },
