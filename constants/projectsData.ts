@@ -94,6 +94,23 @@ export const projectsData = [
   },
   {
     id: 6,
+    title: "Crystal HR Advisor",
+    description: "Transportation HR website.",
+    image: "/images/crystalHrAdvisor.png",
+    github: "https://github.com/suntruxi/crystal-hrAdvisor",
+    contributors: ["Ruxandra Cristescu"],
+    technologies: [
+      "/images/technologies/nextjs.svg",
+      "/images/technologies/typescript.svg",
+      "/images/technologies/tailwind-css.svg",
+      "/images/technologies/framer.webp",
+    ],
+    details:
+      "Crystal HR Advisor is a specialized HR consultancy firm dedicated solely to the transportation industry. With deep expertise in HR and a keen understanding of the sector's specific needs and challenges, they aim to connect transportation companies with the talent they need to accelerate growth and optimize operations. Offering access to an extensive talent network, efficient and cost-effective processes, precise identification of HR needs, streamlined recruitment procedures, and a 30-day guarantee for each hire, they ensure a seamless experience for employers seeking top talent in transportation.",
+    createdAt: "25th of March 2024",
+  },
+  {
+    id: 7,
     title: "Funeral Services",
     description: "Funeral services website.",
     image: "/images/funeralServices.webp",
@@ -107,6 +124,6 @@ export const projectsData = [
     ],
     details:
       "Introducing our solemn yet dignified creation: a presentation website dedicated to funeral services, crafted with reverence and compassion. Our platform serves as a digital sanctuary, offering solace and support to those navigating the challenging process of arranging funeral ceremonies and commemorating the lives of loved ones. With a thoughtful and minimalist design, we provide essential information about our services, including burial and cremation options, memorial arrangements, and grief support resources. Through heartfelt testimonials and a discreet contact portal, we aim to provide comfort and guidance during this sensitive time. Join us as we honor the legacy of those we've lost, offering a beacon of hope and remembrance in their memory.",
-    createdAt: "20th of February 2023",
+    createdAt: "20th of February 2024",
   },
 ];

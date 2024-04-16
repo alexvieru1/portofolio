@@ -44,7 +44,7 @@ const Contact = () => {
     // },
   ];
   return (
-    <div className="flex flex-col items-center 4xs:mt-40  lg:mt-80">
+    <div className="flex flex-col items-center 4xs:mt-40  lg:mt-80 ">
       <div
         className="flex flex-col items-center justify-center h-[20rem] "
         id="contact"

@@ -11,9 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { sendContactForm } from "@/lib/api";
 import {
-  ArrowPathIcon,
   CheckCircleIcon,
-  EnvelopeIcon,
   PaperAirplaneIcon,
 } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
