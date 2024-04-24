@@ -83,14 +83,6 @@ const ReadMore = ({ searchParams }: { searchParams: queryParamsTypes }) => {
             Projects
           </button>
         </Link>
-        {project.deploy && (
-          <Link href={project.deploy} target="_blank">
-            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              <CursorArrowRippleIcon className="mr-2 w-5 h-5" />
-              Deployment
-            </button>
-          </Link>
-        )}
         <Link href={project.github} target="_blank">
           <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             <Image
@@ -105,6 +97,16 @@ const ReadMore = ({ searchParams }: { searchParams: queryParamsTypes }) => {
           </button>
         </Link>
       </div>
+      {project.deploy && (
+          <div className="flex justify-center mt-4">
+            <Link href={project.deploy} target="_blank">
+              <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                <CursorArrowRippleIcon className="mr-2 w-5 h-5" />
+                Deployment
+              </button>
+            </Link>
+          </div>
+        )}
     </div>
   );
 };
