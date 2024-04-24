@@ -5,6 +5,7 @@ export const projectsData = [
     description: "The website of a real estate developer.",
     image: "/images/mrLucass.webp",
     github: "https://github.com/alexvieru1/MrLucass",
+    deploy: "https://mr-lucass.com",
     contributors: [],
     technologies: [
       "/images/technologies/nextjs.svg",
@@ -55,6 +56,24 @@ export const projectsData = [
     createdAt: "19th of May 2023",
   },
   {
+    id: 6,
+    title: "Crystal HR Advisor",
+    description: "Transportation HR website.",
+    image: "/images/crystalHrAdvisor.webp",
+    github: "https://github.com/suntruxi/crystal-hrAdvisor",
+    deploy: "https://crystalhradvisor.com",
+    contributors: ["Ruxandra Cristescu"],
+    technologies: [
+      "/images/technologies/nextjs.svg",
+      "/images/technologies/typescript.svg",
+      "/images/technologies/tailwind-css.svg",
+      "/images/technologies/framer.webp",
+    ],
+    details:
+      "Crystal HR Advisor is a specialized HR consultancy firm dedicated solely to the transportation industry. With deep expertise in HR and a keen understanding of the sector's specific needs and challenges, they aim to connect transportation companies with the talent they need to accelerate growth and optimize operations. Offering access to an extensive talent network, efficient and cost-effective processes, precise identification of HR needs, streamlined recruitment procedures, and a 30-day guarantee for each hire, they ensure a seamless experience for employers seeking top talent in transportation.",
+    createdAt: "25th of March 2024",
+  },
+  {
     id: 4,
     title: "Pokemon Duel",
     description: "A battle game, based on Pokemon's official API.",
@@ -91,23 +110,6 @@ export const projectsData = [
     details:
       "Step into the world of beauty and elegance with our team's latest achievement – a bespoke website for a nails and lashes salon, complete with user login functionality, appointment scheduling, and a seamless e-commerce platform for beauty products. This all-inclusive digital space invites users to personalize their salon experience through secure logins, ensuring a tailored and convenient journey. With a user-friendly appointment system, clients can effortlessly schedule their beauty sessions, while our integrated e-commerce section allows them to explore and purchase high-quality beauty products from the comfort of their homes. Join us in redefining the beauty industry's online presence, where sophistication meets convenience, and every click brings you closer to a pampering experience like no other.",
     createdAt: "18th of August 2023",
-  },
-  {
-    id: 6,
-    title: "Crystal HR Advisor",
-    description: "Transportation HR website.",
-    image: "/images/crystalHrAdvisor.png",
-    github: "https://github.com/suntruxi/crystal-hrAdvisor",
-    contributors: ["Ruxandra Cristescu"],
-    technologies: [
-      "/images/technologies/nextjs.svg",
-      "/images/technologies/typescript.svg",
-      "/images/technologies/tailwind-css.svg",
-      "/images/technologies/framer.webp",
-    ],
-    details:
-      "Crystal HR Advisor is a specialized HR consultancy firm dedicated solely to the transportation industry. With deep expertise in HR and a keen understanding of the sector's specific needs and challenges, they aim to connect transportation companies with the talent they need to accelerate growth and optimize operations. Offering access to an extensive talent network, efficient and cost-effective processes, precise identification of HR needs, streamlined recruitment procedures, and a 30-day guarantee for each hire, they ensure a seamless experience for employers seeking top talent in transportation.",
-    createdAt: "25th of March 2024",
   },
   {
     id: 7,

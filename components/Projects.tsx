@@ -4,7 +4,7 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Image from "next/image";
-import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
+import { ArrowLongRightIcon, CursorArrowRippleIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import { projectsData } from "@/constants/projectsData";
 
@@ -73,19 +73,28 @@ const Projects = () => {
                       <ArrowLongRightIcon className="ml-1 w-5 h-5" />
                     </button>
                   </Link>
-                  <Link href={p.github} target="_blank">
-                    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                      <Image
-                        src="/images/github-mark-white.svg"
-                        width={20}
-                        height={20}
-                        alt="githublogo"
-                        className="mr-2"
-                        draggable={false}
-                      />
-                      Github
-                    </button>
-                  </Link>
+                  {p.deploy ? (
+                    <Link href={p.deploy} target="_blank">
+                      <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                      <CursorArrowRippleIcon className="mr-2 w-5 h-5" />
+                        Deployment
+                      </button>
+                    </Link>
+                  ) : (
+                    <Link href={p.github} target="_blank">
+                      <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <Image
+                          src="/images/github-mark-white.svg"
+                          width={20}
+                          height={20}
+                          alt="githublogo"
+                          className="mr-2"
+                          draggable={false}
+                        />
+                        Github
+                      </button>
+                    </Link>
+                  )}
                 </div>
               </CardBody>
             </CardContainer>
